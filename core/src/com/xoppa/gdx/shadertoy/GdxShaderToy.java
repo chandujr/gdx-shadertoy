@@ -121,7 +121,7 @@ public class GdxShaderToy extends ApplicationAdapter {
             }
         }
 		if (TimeUtils.nanoTime() - fpsStartTimer > 1000000000) /* 1,000,000,000ns == one second */{
-			logger.info("fps: " + Gdx.graphics.getFramesPerSecond());
+//			logger.info("fps: " + Gdx.graphics.getFramesPerSecond());
 			fpsStartTimer = TimeUtils.nanoTime();
 		}
     }
