@@ -29,6 +29,12 @@ public class FullQuadToy {
         viewport.update(width, height, true);
         batch.setProjectionMatrix(viewport.getCamera().combined);
         logger.info("Resize: "+width+" x "+height);
+
+        if(shader != null) {
+            shader.begin();
+            shader.setUniformf("resolution", width, height);
+            shader.end();
+        }
     }
 
     public void setLogger(Logger logger) {

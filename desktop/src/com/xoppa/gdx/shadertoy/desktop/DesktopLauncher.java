@@ -7,7 +7,7 @@ import com.xoppa.gdx.shadertoy.GdxShaderToy;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.width = 1366;
+		config.width = 768;
 		config.height = 768;
 		new LwjglApplication(new GdxShaderToy(), config);
 	}
